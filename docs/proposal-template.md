@@ -40,3 +40,4 @@ Milstones:
 # Anticipated Problems
 
 (Describe any problems you foresee that you will need to overcome)
+Each of us have limited experience in making a game, so we will need to spend some time learning how to go through each step. We also don't know exactly what software we may need or how long it will take us. Running into issues that will put us behind is possible at any point throughout the project.
