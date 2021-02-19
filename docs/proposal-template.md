@@ -25,17 +25,17 @@ We will begin by looking up video's and tutorials for basic games individually a
 # Estimated Timeline
 
 (Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
-Milstones:
-1. Create a single dot(ship) on a blank map
-2. Make that ship fire another dot(lazer)
-3. Make a dot(asteroid) drop from the top of the screen directly above the ship
-4. Make the fired lazer connect with the asteroid, destroying it and awarding points
-5. Make the asteroids fall in different places and directions. 
-6. Create movement for the ship.
-7. Change the dots to images(ship, lazer, asteroid).
-8. Create enemies that move in different patterns than the asteroids, with different potential attacks
-9. Create ranomly generated drops from the asteroids containing different lazer or movement upgrades.
-10. Create boss fights if time permits.
+Milestones:
+1. Create a single dot(ship) on a blank map (1-2 days)
+2. Make that ship fire another dot(lazer) (3-5 days)
+3. Make a dot(asteroid) drop from the top of the screen directly above the ship (5-7 days)
+4. Make the fired lazer connect with the asteroid, destroying it and awarding points (4-5 days)
+5. Make the asteroids fall in different places and directions.  (3-4 days)
+6. Create movement for the ship. (3-4 days)
+7. Change the dots to images(ship, lazer, asteroid). (1-2 days)
+8. Create enemies that move in different patterns than the asteroids, with different potential attacks (7-10 days)
+9. Create ranomly generated drops from the asteroids containing different lazer or movement upgrades. (5-7 days)
+10. Create boss fights if time permits.(7-14 days)
 
 # Anticipated Problems
 
