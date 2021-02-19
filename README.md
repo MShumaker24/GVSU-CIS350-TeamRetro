@@ -6,7 +6,7 @@ Project description (~1 paragraph)
 
 * [Micheal Shumaker](https://github.com/MShumaker24/CIS350-HW2-Shumaker)
 * [Nico Deciechi](https://github.com/nnd3112/t-CIS350-HW2--Deciechi-)
-* Member 3 (Role 5, Role 6)
+* [Eric Weber](https://github.com/EWeb07/CIS350-HW2-Weber)
 
 ## Prerequisites
 
