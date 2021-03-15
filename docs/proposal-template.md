@@ -1,20 +1,16 @@
 Team name: Team Retro
 
-Team members: Ryan Terpstra, 
+Team members: Ryan Terpstra, Micheal Shumaker
 
 # Introduction
-
-(In 2-4 paragraphs, describe your project concept)
 
   For our project, we plan to use Java to create a space invaders type video game.  Initially the plan will be to make the game very basic, where a ship fires at asteroids or enemies using a single lazer and points are awarded for connecting shots.  Depending on the difficulty level of creating a the base level with just asteroids and a single lazer, the game will be expanded to match a difficulty level appropriate for the class.  Upgrades, new enemies, and increasing level difficulties can be added in order to increase game complexity.  Boss levels will also be considered depending on if the scope of the project seems to be to simple. 
   
   None of us have created a game of this sort before, so before beginning the project we will be watching how-to videos to get acclimated with designing such a project. Depending on each of our strengths, level design, writing code, and game concepts will be designated to group members during our weekly meetings.  We will also be using stack-overflow, and plan on meeting with members of the CISLAB if difficulties ensue.  
   
- 
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
 The only technology that we presume we will be using is a computer with Intelli-J. Once more research has been done on the project, it is possible that other software may need to be aquired to assist in the creation of the game. 
 
 # Method/Approach
@@ -24,7 +20,6 @@ We will begin by looking up video's and tutorials for basic games individually a
 
 # Estimated Timeline
 
-(Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
 Milestones:
 1. Create a single dot(ship) on a blank map (1-2 days)
 2. Make that ship fire another dot(lazer) (3-5 days)
@@ -39,5 +34,4 @@ Milestones:
 
 # Anticipated Problems
 
-(Describe any problems you foresee that you will need to overcome)
 Each of us have limited experience in making a game, so we will need to spend some time learning how to go through each step. We also don't know exactly what software we may need or how long it will take us. Running into issues that will put us behind is possible at any point throughout the project.
