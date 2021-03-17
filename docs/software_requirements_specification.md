@@ -13,12 +13,11 @@ The purpose of this document is to clearly define the software requirements for 
     1. FR2.1: The game shall have a main menu with an option for Play, Options, and Quit Game.
     1. FR2.2: The system shall contain three different screens: a main menu, a level menu, and the specific game screen.
     1. FR2.3: The menu shall be displayed and run the game when the play button is pressed by the player.
-    1. FR2.4: The menu shall be displayed and run the game when the play button is pressed by the player.
 1. General Gameplay
     1. FR3.1: The game shall be able to be played endlessly with a tracking of the users score.
     1. FR3.2: The game shall have both a mixture of small enemy gameplay and large boss gameplay.
-    1. FR3.3: The system shall be compatible with a standard 1920 x 1080 resolution monitor.
-    1. FR3.4: The system shall contain a count for the number of lives during the level, where each time the player collides with an asteroid, the count decreases by one.
+    1. FR3.3: The system shall contain a count for the number of lives during the level, where each time the player collides with an asteroid, the count decreases by one.
+    1. FR3.4: The game shall have a score counter that increases when the enemy explodes
 1. Enemies
     1. FR4.1: The enemy ships shall explode when contacted by lasers fired from the fighter ship. 
 
@@ -39,6 +38,7 @@ The purpose of this document is to clearly define the software requirements for 
     1. NFR3.2: The game shall be able to be played with any default keyboard layout.
     1. NFR3.3: The game shall run at a good frame rate at 30fps to 60fps.
     1. NFR3.4: The system shall respond to user input with little to no delay.
+    1. NFR3.5: The system shall be compatible with a standard 1920 x 1080 resolution monitor.
 1. The Ship
     1. NFR4.1:  The player-controlled character shall move at move at an intermediate movement speed.
 
