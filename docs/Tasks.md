@@ -1,11 +1,11 @@
-1. Tasks that have been completed  
+# 1. Tasks that have been completed  
 
 Name: Basic Game Development  
 Description: Work through a turtorial series to get a simple Space Invaders themed game running.  
 Expected time to complete: 1 week  
 Responsible: Ryan
 
-2. Tasks that have not yet been completed  
+# 2. Tasks that have not yet been completed  
 
 Name: Create Main Menu  
 Description: Add on to our game by creating a main menu screen.  
