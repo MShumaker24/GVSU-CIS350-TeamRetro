@@ -55,4 +55,5 @@ Description: instead of shooting in intervals of time, the ship will shoot when 
 Expected time to complete: 1-2 weeks
 Responsibilty:undecided
 
-
+1.tasks that have been completed: follow tutorial
+2.tasks that still require completion: all other tasks
