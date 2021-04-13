@@ -174,6 +174,10 @@ class GameScreen implements Screen {
         //hud rendering
         updateAndRenderHUD();
 
+        if (playerShip.lives == 0) {
+            endGame();
+        }
+
         batch.end();
     }
 
@@ -325,9 +329,6 @@ class GameScreen implements Screen {
                                     1.6f));
                     playerShip.shield = 5;
                     playerShip.lives--;
-//                    if (playerShip.lives < 0) {
-//                        playerShip.lives = 0;
-//                    }
                 }
                 laserListIterator.remove();
             }
@@ -401,6 +402,14 @@ class GameScreen implements Screen {
             batch.draw(backgrounds[layer], 0, -backgroundOffsets[layer],
                     WORLD_WIDTH, backgroundHeight);
         }
+    }
+
+    private void endGame() {
+        enemySpawnTimer = 0;
+        enemyShipList.clear();
+        enemyLaserList.clear();
+        playerLaserList.clear();
+        playerShip.boundingBox.setPosition(0, 250);
     }
 
     @Override
