@@ -26,6 +26,8 @@ import java.util.Locale;
 
 class GameScreen implements Screen {
 
+    private SpaceShooterGame parent;
+
     //screen
     private Camera camera;
     private Viewport viewport;
@@ -66,7 +68,9 @@ class GameScreen implements Screen {
     BitmapFont font;
     float hudVerticalMargin, hudLeftX, hudRightX, hudCentreX, hudRow1Y, hudRow2Y, hudSectionWidth;
 
-    GameScreen() {
+    GameScreen(SpaceShooterGame spaceShooterGame) {
+
+        parent = spaceShooterGame;
 
         camera = new OrthographicCamera();
         viewport = new StretchViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
