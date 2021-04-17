@@ -103,7 +103,7 @@ class GameScreen implements Screen {
         //set up game objects
         playerShip = new PlayerShip(WORLD_WIDTH / 2, WORLD_HEIGHT / 4,
                 10, 10,
-                48, 3,
+                48, 5,
                 0.4f, 4, 45, 0.5f,
                 playerShipTextureRegion, playerShieldTextureRegion, playerLaserTextureRegion);
 
@@ -178,6 +178,10 @@ class GameScreen implements Screen {
         //hud rendering
         updateAndRenderHUD();
 
+        if (playerShip.lives == 0) {
+            endGame();
+        }
+
         batch.end();
     }
 
@@ -187,9 +191,12 @@ class GameScreen implements Screen {
         font.draw(batch, "Shield", hudCentreX, hudRow1Y, hudSectionWidth, Align.center, false);
         font.draw(batch, "Lives", hudRightX, hudRow1Y, hudSectionWidth, Align.right, false);
         //render second row values
-        font.draw(batch, String.format(Locale.getDefault(), "%06d", score), hudLeftX, hudRow2Y, hudSectionWidth, Align.left, false);
-        font.draw(batch, String.format(Locale.getDefault(), "%02d", playerShip.shield), hudCentreX, hudRow2Y, hudSectionWidth, Align.center, false);
-        font.draw(batch, String.format(Locale.getDefault(), "%02d", playerShip.lives), hudRightX, hudRow2Y, hudSectionWidth, Align.right, false);
+        font.draw(batch, String.format(Locale.getDefault(), "%06d", score), hudLeftX, hudRow2Y, hudSectionWidth,
+                Align.left, false);
+        font.draw(batch, String.format(Locale.getDefault(), "%02d", playerShip.shield), hudCentreX, hudRow2Y,
+                hudSectionWidth, Align.center, false);
+        font.draw(batch, String.format(Locale.getDefault(), "%02d", playerShip.lives), hudRightX, hudRow2Y,
+                hudSectionWidth, Align.right, false);
     }
 
     private void spawnEnemyShips(float deltaTime) {
@@ -324,7 +331,7 @@ class GameScreen implements Screen {
                             new Explosion(explosionTexture,
                                     new Rectangle(playerShip.boundingBox),
                                     1.6f));
-                    playerShip.shield = 10;
+                    playerShip.shield = 5;
                     playerShip.lives--;
                 }
                 laserListIterator.remove();
@@ -399,6 +406,14 @@ class GameScreen implements Screen {
             batch.draw(backgrounds[layer], 0, -backgroundOffsets[layer],
                     WORLD_WIDTH, backgroundHeight);
         }
+    }
+
+    private void endGame() {
+        enemySpawnTimer = 0;
+        enemyShipList.clear();
+        enemyLaserList.clear();
+        playerLaserList.clear();
+        playerShip.boundingBox.setPosition(0, 250);
     }
 
     @Override
