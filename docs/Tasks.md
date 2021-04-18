@@ -5,12 +5,12 @@ Description: Work through a turtorial series to get a simple Space Invaders them
 Expected time to complete: 1 week  
 Responsible: Ryan
 
-# 2. Tasks that have not yet been completed  
-
 Name: Create Main Menu  
 Description: Add on to our game by creating a main menu screen.  
 Expected time to complete: 1 week  
-Responsible: Ryan  
+Responsible: Ryan 
+
+# 2. Tasks that have not yet been completed  
 
 Name: Handle Game End  
 Description: Make the ship explode when the number of lives reaches 0 and end the game.  

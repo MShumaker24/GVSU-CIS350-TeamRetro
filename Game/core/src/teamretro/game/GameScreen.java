@@ -183,6 +183,7 @@ class GameScreen implements Screen {
         }
 
         batch.end();
+
     }
 
     private void updateAndRenderHUD() {
@@ -409,11 +410,7 @@ class GameScreen implements Screen {
     }
 
     private void endGame() {
-        enemySpawnTimer = 0;
-        enemyShipList.clear();
-        enemyLaserList.clear();
-        playerLaserList.clear();
-        playerShip.boundingBox.setPosition(0, 250);
+        parent.changeScreen(SpaceShooterGame.GAMEOVER);
     }
 
     @Override

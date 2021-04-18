@@ -16,14 +16,11 @@ public class MenuScreen implements Screen {
     private SpaceShooterGame parent;
     private Stage stage;
 
-    public MenuScreen(SpaceShooterGame spaceShooterGame){
+    public MenuScreen(SpaceShooterGame spaceShooterGame) {
         parent = spaceShooterGame;
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
     }
-
-
-
 
     @Override
     public void show() {
@@ -61,10 +58,6 @@ public class MenuScreen implements Screen {
                 parent.changeScreen(SpaceShooterGame.APPLICATION);
             }
         });
-
-
-
-
 
     }
 

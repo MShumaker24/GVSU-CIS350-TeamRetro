@@ -8,12 +8,14 @@ public class SpaceShooterGame extends Game {
 	public final static int MENU = 0;
 	public final static int APPLICATION = 1;
 	public final static int ENDGAME = 2;
+	public final static int GAMEOVER = 3;
 	//public final static int HIGHSCORE = 3;
 
 
 	GameScreen gameScreen;
 	MenuScreen menuScreen;
 	EndScreen endScreen;
+	GameOverScreen gameOverScreen;
 
 
 	public static Random random = new Random();
@@ -31,6 +33,10 @@ public class SpaceShooterGame extends Game {
 			case ENDGAME:
 				if (endScreen == null) endScreen = new EndScreen(this);  // added (this)
 				this.setScreen(endScreen);
+				break;
+			case GAMEOVER:
+				if (gameOverScreen == null) gameOverScreen = new GameOverScreen(this);
+				this.setScreen(gameOverScreen);
 				break;
 		}
 	}
