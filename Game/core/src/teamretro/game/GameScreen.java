@@ -208,9 +208,26 @@ class GameScreen implements Screen {
                     WORLD_HEIGHT - 5,
                     10, 10,
                     48, 1,
-                    0.3f, 5, 50, 0.8f,
+                    1, 5, 50, 0.8f,
                     enemyShipTextureRegion, enemyShieldTextureRegion, enemyLaserTextureRegion));
             enemySpawnTimer -= timeBetweenEnemySpawns;
+
+            enemyShipList.add(new EnemyShip(SpaceShooterGame.random.nextFloat() * (WORLD_WIDTH - 10) + 5,
+                    WORLD_HEIGHT - 5,
+                    10, 10,
+                    44, 2,
+                    3, 5, 45, 1,
+                    enemyShipTextureRegion, enemyShieldTextureRegion, enemyLaserTextureRegion));
+            enemySpawnTimer -= timeBetweenEnemySpawns;
+
+            enemyShipList.add(new EnemyShip(SpaceShooterGame.random.nextFloat() * (WORLD_WIDTH - 10) + 5,
+                    WORLD_HEIGHT - 5,
+                    5, 5,
+                    80, 0,
+                    1, 3, 45, 1,
+                    enemyShipTextureRegion, enemyShieldTextureRegion, enemyLaserTextureRegion));
+            enemySpawnTimer -= timeBetweenEnemySpawns;
+
         }
     }
 
