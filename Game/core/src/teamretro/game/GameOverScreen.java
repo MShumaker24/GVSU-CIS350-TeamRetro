@@ -2,6 +2,7 @@ package teamretro.game;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -61,6 +62,9 @@ public class GameOverScreen implements Screen {
         //need to find a way to bring in the score variable from GameScreen class
 
         //click anywhere to go to main menu
+        if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+            parent.changeScreen(SpaceShooterGame.MENU);
+        }
 
         batch.end();
     }
