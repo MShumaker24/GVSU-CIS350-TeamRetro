@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.badlogic.gdx.audio.Music;
 
 import java.awt.*;
 
@@ -17,10 +18,16 @@ public class MenuScreen implements Screen {
 
     private SpaceShooterGame parent;
     private Stage stage;
+    private Music music;
 
     public MenuScreen(SpaceShooterGame spaceShooterGame) {
         parent = spaceShooterGame;
         stage = new Stage(new ScreenViewport());
+        music=Gdx.audio.newMusic(Gdx.files.internal("intro.ogg"));
+        music.setLooping(true);
+        music.setVolume(1.0f);
+        music.play();
+
 
     }
 
@@ -57,6 +64,9 @@ public class MenuScreen implements Screen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 parent.changeScreen(SpaceShooterGame.APPLICATION);
+
+                music.pause();
+
             }
         });
 
