@@ -1,10 +1,13 @@
 package teamretro.game;
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Music;
 
 import java.util.Random;
 
 public class SpaceShooterGame extends Game {
-
+    private Music GOmusic;
+    private Music music;
 	public final static int MENU = 0;
 	public final static int APPLICATION = 1;
 	public final static int ENDGAME = 2;
@@ -25,10 +28,14 @@ public class SpaceShooterGame extends Game {
 			case MENU:
 				if (menuScreen == null) menuScreen = new MenuScreen(this); // added (this)
 				this.setScreen(menuScreen);
+
+				GOmusic.pause();
 				break;
-			case APPLICATION:
+
+				case APPLICATION:
 				if (gameScreen == null) gameScreen = new GameScreen(this); //added (this)
 				this.setScreen(gameScreen);
+
 				break;
 			case ENDGAME:
 				if (endScreen == null) endScreen = new EndScreen(this);  // added (this)
@@ -37,6 +44,11 @@ public class SpaceShooterGame extends Game {
 			case GAMEOVER:
 				if (gameOverScreen == null) gameOverScreen = new GameOverScreen(this);
 				this.setScreen(gameOverScreen);
+				GOmusic=Gdx.audio.newMusic(Gdx.files.internal("death.ogg"));
+				GOmusic.setLooping(true);
+				GOmusic.setVolume(1.0f);
+				GOmusic.play();
+
 				break;
 		}
 	}
