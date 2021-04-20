@@ -18,6 +18,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.badlogic.gdx.audio.Music;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -27,6 +28,9 @@ import java.util.Locale;
 class GameScreen implements Screen {
 
     private SpaceShooterGame parent;
+    private Music Gmusic;
+
+
 
     //screen
     private Camera camera;
@@ -69,7 +73,10 @@ class GameScreen implements Screen {
     float hudVerticalMargin, hudLeftX, hudRightX, hudCentreX, hudRow1Y, hudRow2Y, hudSectionWidth;
 
     GameScreen(SpaceShooterGame spaceShooterGame) {
-
+        Gmusic=Gdx.audio.newMusic(Gdx.files.internal("level3.ogg"));
+        Gmusic.setLooping(true);
+        Gmusic.setVolume(1.0f);
+        Gmusic.play();
         parent = spaceShooterGame;
 
         camera = new OrthographicCamera();
@@ -179,9 +186,18 @@ class GameScreen implements Screen {
         updateAndRenderHUD();
 
         if (playerShip.lives == 0) {
+            Gmusic.dispose();
+
             endGame();
             playerShip.lives = 5;
+
         }
+
+        else {
+            Gmusic.play();
+
+        }
+
 
         batch.end();
 
