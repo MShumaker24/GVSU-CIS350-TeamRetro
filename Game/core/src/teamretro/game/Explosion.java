@@ -1,19 +1,22 @@
 package teamretro.game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.audio.Music;
 
 class Explosion {
 
     private Animation<TextureRegion> explosionAnimation;
     private float explosionTimer;
-
+    private Music Esound;
     private Rectangle boundingBox;
 
     Explosion(Texture texture, Rectangle boundingBox, float totalAnimationTime) {
         this.boundingBox = boundingBox;
+
 
         //split texture
         TextureRegion[][] textureRegion2D = TextureRegion.split(texture, 64, 64);
@@ -30,6 +33,9 @@ class Explosion {
 
         explosionAnimation = new Animation<TextureRegion>(totalAnimationTime/16, textureRegion1D);
         explosionTimer = 0;
+        Esound=Gdx.audio.newMusic(Gdx.files.internal("8bit_bomb_explosion.wav"));
+        Esound.setVolume(20.0f);
+
     }
 
     public void update(float deltaTime) {
@@ -42,10 +48,19 @@ class Explosion {
                 boundingBox.y,
                 boundingBox.width,
                 boundingBox.height);
+                Esound.setVolume(5.0f);
+                Esound.play();
+
+
+
+
     }
+
+
 
     public boolean isFinished() {
         return explosionAnimation.isAnimationFinished(explosionTimer);
+
     }
 
 }
