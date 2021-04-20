@@ -13,13 +13,19 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.badlogic.gdx.audio.Music;
 
 public class GameOverScreen implements Screen {
 
+    private Music GOmusic;
     private SpaceShooterGame parent;
     private Stage stage;
 
     public GameOverScreen(SpaceShooterGame spaceShooterGame) {
+        GOmusic=Gdx.audio.newMusic(Gdx.files.internal("death.ogg"));
+        GOmusic.setLooping(true);
+        GOmusic.setVolume(1.0f);
+        GOmusic.play();
         parent = spaceShooterGame;
         stage = new Stage(new ScreenViewport());
     }
@@ -52,11 +58,14 @@ public class GameOverScreen implements Screen {
 
 
         font.draw(batch, str, (float) Gdx.graphics.getBackBufferWidth() / 4.0f, Gdx.graphics.getBackBufferHeight() / 2.0f);
-       // click anywhere to go to main menu
+        // click anywhere to go to main menu
         if (Gdx.input.isTouched()) {
-           parent.changeScreen(SpaceShooterGame.MENU);
+            parent.changeScreen(SpaceShooterGame.MENU);
+            GOmusic.dispose();
+
         }
         batch.end();
+
     }
 
     @Override
