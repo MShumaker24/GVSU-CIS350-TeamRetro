@@ -51,7 +51,7 @@ public class GameOverScreen implements Screen {
         CharSequence str = "Game Over";
 
 
-        font.draw(batch, str, (float) Gdx.graphics.getBackBufferWidth() / 4.0f, 350);
+        font.draw(batch, str, (float) Gdx.graphics.getBackBufferWidth() / 4.0f, Gdx.graphics.getBackBufferHeight() / 2.0f);
        // click anywhere to go to main menu
         if (Gdx.input.isTouched()) {
            parent.changeScreen(SpaceShooterGame.MENU);
