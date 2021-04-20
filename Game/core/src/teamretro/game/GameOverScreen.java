@@ -22,22 +22,17 @@ public class GameOverScreen implements Screen {
     public GameOverScreen(SpaceShooterGame spaceShooterGame) {
         parent = spaceShooterGame;
         stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
     public void show() {
-        Table table = new Table();
-        table.setFillParent(true);
-        table.setDebug(true);
-        stage.addActor(table);
+        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
     public void render(float delta) {
         Gdx.gl.glClearColor(0f, 0f, 0f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.draw();
 
@@ -55,17 +50,12 @@ public class GameOverScreen implements Screen {
         batch.begin();
         CharSequence str = "Game Over";
 
-        //Gdx.graphics.getBackBufferWidth
-        //Gdx.graphics.getBackBufferHeight
+
         font.draw(batch, str, (float) Gdx.graphics.getBackBufferWidth() / 4.0f, 350);
-        //display total score from the game here
-        //need to find a way to bring in the score variable from GameScreen class
-
-        //click anywhere to go to main menu
-        if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-            parent.changeScreen(SpaceShooterGame.MENU);
+       // click anywhere to go to main menu
+        if (Gdx.input.isTouched()) {
+           parent.changeScreen(SpaceShooterGame.MENU);
         }
-
         batch.end();
     }
 
@@ -91,6 +81,7 @@ public class GameOverScreen implements Screen {
 
     @Override
     public void dispose() {
+        stage.dispose();
 
     }
 }

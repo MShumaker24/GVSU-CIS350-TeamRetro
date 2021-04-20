@@ -180,6 +180,7 @@ class GameScreen implements Screen {
 
         if (playerShip.lives == 0) {
             endGame();
+            playerShip.lives = 5;
         }
 
         batch.end();
