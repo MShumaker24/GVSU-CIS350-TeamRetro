@@ -245,6 +245,8 @@ class GameScreen implements Screen {
                     enemyShipTextureRegion, enemyShieldTextureRegion, enemyLaserTextureRegion));
             enemySpawnTimer -= timeBetweenEnemySpawns;
 
+
+
         }
     }
 
