@@ -43,4 +43,4 @@ your SRS>
 
 <Describe the purpose of this section>
 
-* [I am a link](to_some_file.pdf)
+* [Code for the game](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/Game/core/src/teamretro/game)
