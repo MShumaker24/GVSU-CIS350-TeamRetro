@@ -10,14 +10,15 @@ your SRS>
 
 ## Functional Requirements
 
-### <Name of Feature 1> 
+### The Player Ship
 
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| FR1 | <Requirement 1> | 
-| FR2 | <Requirement 2> | 
-| FR3 | <Requirement 3> | 
-| … | … |
+| FR1.1 | The system shall have a ship controlled by the user with either the mouse or the arrow keys | 
+| FR1.2 | The system shall fire lasers from the ship on a specific delay | 
+| FR1.3 | The ship shall be exposed and lose its shield after it gets hit five times |
+| FR1.4 | The ship shall display an explosion animation when it gets hit after losing its shield |
+| FR1.5 | The ship shall have 3 lives, after which is dies completely and the game ends |
 
 ### <Name of Feature 2>
 
@@ -26,7 +27,6 @@ your SRS>
 | FR4 | <Requirement 1> | 
 | FR5 | <Requirement 2> | 
 | FR6 | <Requirement 3> | 
-| … | … | 
 
 ## Non-Functional Requirements
 
