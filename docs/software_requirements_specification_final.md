@@ -30,13 +30,15 @@ your SRS>
 
 ## Non-Functional Requirements
 
-### <Name of Feature 1> 
+### Sound 
 
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| NFR1 | <Non-Functional Requirement 1> | 
-| NFR2 | < Non-Functional Requirement 2> |
-| NFR3 | < Non-Functional Requirement 3> |
+| NFR1 | Menu screen shall play music when games loads up | 
+| NFR2 | Game screen shall play music while on screen |
+| NFR3 | Game over screen shall play music while on screen |
+| NFR4 | Laser image shall play laser sound effect when fired by player ship |
+| NFR5 | Explosion sound effect shall play when explosion image appears on screen |
 | … | … | 
 
 # Software Artifacts
