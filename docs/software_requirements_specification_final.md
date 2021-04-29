@@ -39,7 +39,7 @@ your SRS>
 | NFR3 | Game over screen shall play music while on screen |
 | NFR4 | Laser image shall play laser sound effect when fired by player ship |
 | NFR5 | Explosion sound effect shall play when explosion image appears on screen |
-| … | … | 
+ 
 
 # Software Artifacts
 
