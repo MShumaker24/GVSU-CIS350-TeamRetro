@@ -20,25 +20,18 @@ your SRS>
 | FR1.4 | The ship shall display an explosion animation when it gets hit after losing its shield |
 | FR1.5 | The ship shall have 3 lives, after which is dies completely and the game ends |
 
-### <Name of Feature 2>
-
-| ID  | Requirement     | 
-| :-------------: | :----------: |
-| FR4 | <Requirement 1> | 
-| FR5 | <Requirement 2> | 
-| FR6 | <Requirement 3> | 
-
-## Non-Functional Requirements
-
 ### Sound 
 
 | ID  | Requirement     | 
 | :-------------: | :----------: | 
-| NFR1 | Menu screen shall play music when games loads up | 
-| NFR2 | Game screen shall play music while on screen |
-| NFR3 | Game over screen shall play music while on screen |
-| NFR4 | Laser image shall play laser sound effect when fired by player ship |
-| NFR5 | Explosion sound effect shall play when explosion image appears on screen |
+| FR2.1 | Menu screen shall play music when games loads up | 
+| FR2.2 | Game screen shall play music while on screen |
+| FR2.3| Game over screen shall play music while on screen |
+| FR2.4 | Laser image shall play laser sound effect when fired by player ship |
+| FR2.5 | Explosion sound effect shall play when explosion image appears on screen |
+## Non-Functional Requirements
+
+
  
 
 # Software Artifacts
