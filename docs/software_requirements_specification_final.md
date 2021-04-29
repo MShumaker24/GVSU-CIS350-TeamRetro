@@ -39,3 +39,4 @@ your SRS>
 <Describe the purpose of this section>
 
 * [Code for the game](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/Game/core/src/teamretro/game)
+* [Artifacts link](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/artifacts) 
