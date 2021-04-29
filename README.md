@@ -11,15 +11,15 @@ This is a retro 16-bit era inspired space shoot `em up (shmup) video game. This 
 * [Ryan Terpstra](https://github.com/rterp2/CIS241_Ryan_Terpstra.git)
 
 ## Prerequisites
-Any program that can run Java (IntelliJ for example).
-Gradle plugin. 
-LibGDX plugin.
+* Any program that can run Java (IntelliJ for example).
+* Gradle plugin. 
+* LibGDX plugin.
 
 ## Run Instructions
-1.Download game folder from TeamRetro repository.
-2.Open game folder in a Java application.
-3.Go to and extend desktop folder.
-4.Extend src[main] folder.
-5.Extend teamretro.game.desktop folder.
-6.Go to DesktopLauncher and run DesktopLauncher.main().
+1. Download game folder from TeamRetro repository.
+2. Open game folder in a Java application.
+3. Go to and extend desktop folder.
+4. Extend src[main] folder.
+5. Extend teamretro.game.desktop folder.
+6. Go to DesktopLauncher and run DesktopLauncher.main().
 
