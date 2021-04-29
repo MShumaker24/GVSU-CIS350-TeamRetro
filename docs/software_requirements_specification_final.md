@@ -29,10 +29,29 @@ your SRS>
 | FR2.3| Game over screen shall play music while on screen |
 | FR2.4 | Laser image shall play laser sound effect when fired by player ship |
 | FR2.5 | Explosion sound effect shall play when explosion image appears on screen |
+
 ## Non-Functional Requirements
 
+### General Game Design
 
- 
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| NFR1.1 | The game shall be developed with the Java graphics library LibGDX | 
+| NFR1.2 | The game shall have well defined sprites which perform well with little to no latency |
+| NFR1.3| The system shall have a main menu with clear and easy to navigate buttons |
+| NFR1.4 | The game shall emulate the look of a retro arcade game |
+| NFR1.5 | The game shall not be too hard allowing players of all skill levels to succeed |
+
+### System Specifications
+
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| NFR2.1 | The game shall be able to run on a machine with Java framework installed | 
+| NFR2.2 | The game shall be able to be played with any default keyboard layout |
+| NFR2.3| The game shall run at a stable framerate, 30-60 fps |
+| NFR2.4 | User inputs shall be executed with little to no system latency |
+| NFR2.5 | The game window shall scale with a standard 1920 x 1080 monitor resolution  |
+
 
 # Software Artifacts
 
