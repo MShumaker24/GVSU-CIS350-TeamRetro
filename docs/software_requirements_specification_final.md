@@ -32,9 +32,9 @@ Links to source code and artifacts will also be provided.
 | FR2.4 | Laser image shall play laser sound effect when fired by player ship |
 | FR2.5 | Explosion sound effect shall play when explosion image appears on screen |
 
-###
+### User Interface
 
-| ID  | User Interface     | 
+| ID  | Requirement     | 
 | :-------------: | :----------: | 
 | FR3.1 | There shall be multiple different screens for the main menu, gameplay, and game over| 
 | FR3.2 | The users score and lives shall be displayed during the gameplay screen|
