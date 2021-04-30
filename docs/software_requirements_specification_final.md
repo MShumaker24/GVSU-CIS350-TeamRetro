@@ -64,6 +64,16 @@ Links to source code and artifacts will also be provided.
 | NFR2.4 | User inputs shall be executed with little to no system latency |
 | NFR2.5 | The game window shall scale with a standard 1920 x 1080 monitor resolution  |
 
+### Enemy ships
+
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| NFR3.1 | There shall be multiple types of enemies with different attacks | 
+| NFR3.2 | There shall be different size enemies that move at different speeds and fire different attacks |
+| NFR3.3| The enemies shall fire their specified lazer at their own rate and size of lazer |
+| NFR3.4 | There shall be enemies with different levels of shields depending on their function |
+| NFR3.5 | The emenies shall respawn at a set rate |
+
 
 # Software Artifacts
 
