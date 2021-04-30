@@ -42,6 +42,17 @@ Links to source code and artifacts will also be provided.
 | FR3.4 |There shall be two buttons on the main menu screen allowing the user to start or exit game |
 | FR3.5 |Reaching 0 lives in the game shall send the user to the game over screen |
 
+### Enemy Ships
+
+| ID  | Requirement     | 
+| :-------------: | :----------: | 
+| FR4.1 | There shall be two types of enemy ships| 
+| FR4.2 | One of the enemy ships shall be small and fast|
+| FR4.3| One of the enemy ships shall be large and deal extra damage|
+| FR4.4 |The movement of the enemy ships shall be randomized |
+| FR4.5 |The enemy ships shall take 2 hits to be destroyed|
+
+
 ## Non-Functional Requirements
 
 ### General Game Design
@@ -80,5 +91,7 @@ Links to source code and artifacts will also be provided.
 <Describe the purpose of this section>
 
 * [Code for the game](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/Game/core/src/teamretro/game)
-* [Use Case Diagrams](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/artifacts) 
+* [Use Case Diagrams](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/artifacts/use_case_diagrams) 
 * [Gaant Chart PDF](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/blob/master/docs/gantt.pdf)
+* [Initial Proposal](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/blob/master/docs/proposal-template.md)
+* [Powerpoint Presentation PDF](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/blob/master/Game/Game_Presentation.pdf)
