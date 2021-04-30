@@ -83,7 +83,7 @@ Links to source code and artifacts will also be provided.
 | NFR3.2 | There shall be different size enemies that move at different speeds and fire different attacks |
 | NFR3.3| The enemies shall fire their specified lazer at their own rate and size of lazer |
 | NFR3.4 | There shall be enemies with different levels of shields depending on their function |
-| NFR3.5 | The emenies shall respawn at a set rate |
+| NFR3.5 | The enemies shall have a retro design |
 
 
 # Software Artifacts
