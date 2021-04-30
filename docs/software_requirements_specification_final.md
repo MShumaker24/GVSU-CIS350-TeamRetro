@@ -72,3 +72,4 @@ Links to source code and artifacts will also be provided.
 * [Code for the game](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/Game/core/src/teamretro/game)
 * [Use Case Diagrams](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/tree/master/artifacts/use_case_diagrams) 
 * [Gaant Chart PDF](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/blob/master/docs/gantt.pdf)
+* [Initial Proposal](https://github.com/MShumaker24/GVSU-CIS350-TeamRetro/blob/master/docs/proposal-template.md)
