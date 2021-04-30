@@ -1,8 +1,10 @@
 
 # Overview
 
-<Describe the purpose of this document in 1 paragraph of less … hint: it is
-your SRS>
+
+The purpose of this document is to clearly define the software requirements for our team project. 
+All features should be listed and the requirements will describe how each feature will function. 
+Links to source code and artifacts will also be provided. 
 
 # Software Requirements
 
@@ -29,6 +31,16 @@ your SRS>
 | FR2.3| Game over screen shall play music while on screen |
 | FR2.4 | Laser image shall play laser sound effect when fired by player ship |
 | FR2.5 | Explosion sound effect shall play when explosion image appears on screen |
+
+###
+
+| ID  | User Interface     | 
+| :-------------: | :----------: | 
+| FR3.1 | There shall be multiple different screens for the main menu, gameplay, and game over| 
+| FR3.2 | The users score and lives shall be displayed during the gameplay screen|
+| FR3.3| Clicking anywhere on the game over screen shall send the user back to the main menu screen|
+| FR3.4 |There shall be two buttons on the main menu screen allowing the user to start or exit game |
+| FR3.5 |Reaching 0 lives in the game shall send the user to the game over screen |
 
 ## Non-Functional Requirements
 
